@@ -24,3 +24,5 @@ python-dotenv
 #Machine Learning utilities
 numpy
 scikit-learn 
+
+pytorch
