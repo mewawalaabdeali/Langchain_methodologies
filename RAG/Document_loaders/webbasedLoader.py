@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-url = 'https://www.njit.edu/admissions'
+url = 'https://zainabshakky.wordpress.com/'
 model = ChatOpenAI()
 
 parser = StrOutputParser()
@@ -22,4 +22,4 @@ docs = loader.load()
 
 chain = prompt | model | parser
 
-print(chain.invoke({'question':'Can you tell me something about the fees criteria?', 'text':docs[0].page_content}))
+print(chain.invoke({'question':'What is explained in the blog, provide summary in 5 lines', 'text':docs[0].page_content}))
